@@ -1,0 +1,195 @@
+{
+	"id": "f01c2d49-903b-4502-8984-2729ff620c26",
+	"name": "fakerestapi.azurewebsitesUdacity",
+	"timestamp": "2022-08-24T23:03:52.003Z",
+	"collection_id": "10266715-747605e5-9c17-452c-854f-5b565cef50bd",
+	"folder_id": 0,
+	"environment_id": "10266715-09915506-549b-47da-855f-10b2fe020518",
+	"totalPass": 1,
+	"totalFail": 4,
+	"results": [
+		{
+			"id": "c0009a87-c884-482e-aab2-d35760d94a47",
+			"name": "Author Id",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors",
+			"time": 162,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				162
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "74f735d3-e5ed-43a0-ac42-aab7bc9dfa83",
+			"name": "BookId",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors/authors/books/164",
+			"time": 75,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				" Searching with valid idBook should return relative data in response body.": false
+			},
+			"testPassFailCounts": {
+				" Searching with valid idBook should return relative data in response body.": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				75
+			],
+			"allTests": [
+				{
+					" Searching with valid idBook should return relative data in response body.": false
+				}
+			]
+		},
+		{
+			"id": "b589f898-629a-4037-8f05-d53fc19d4dfb",
+			"name": "Author",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors/500",
+			"time": 80,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Author's data in response is updated successfully.": true
+			},
+			"testPassFailCounts": {
+				"Author's data in response is updated successfully.": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				80
+			],
+			"allTests": [
+				{
+					"Author's data in response is updated successfully.": true
+				}
+			]
+		},
+		{
+			"id": "7a5a48c6-f9f7-431b-b13d-ad4ab5e6b5f0",
+			"name": "Authors By ID",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors/500",
+			"time": 80,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Author's data in response is updated successfully.": false
+			},
+			"testPassFailCounts": {
+				"Author's data in response is updated successfully.": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				80
+			],
+			"allTests": [
+				{
+					"Author's data in response is updated successfully.": false
+				}
+			]
+		},
+		{
+			"id": "075705e9-47f5-4585-bf23-071dc725b0da",
+			"name": "Author_1",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors",
+			"time": 74,
+			"responseCode": {
+				"code": 415,
+				"name": "Unsupported Media Type"
+			},
+			"tests": {
+				"Status Code Should Be 201 Not 200.": false
+			},
+			"testPassFailCounts": {
+				"Status Code Should Be 201 Not 200.": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				74
+			],
+			"allTests": [
+				{
+					"Status Code Should Be 201 Not 200.": false
+				}
+			]
+		},
+		{
+			"id": "8c6a5116-a90a-44cd-ae30-b8067eced02d",
+			"name": "Author_2",
+			"url": "https://fakerestapi.azurewebsites.net/api/v1/Authors",
+			"time": 73,
+			"responseCode": {
+				"code": 415,
+				"name": "Unsupported Media Type"
+			},
+			"tests": {
+				"Status Code 200.": false
+			},
+			"testPassFailCounts": {
+				"Status Code 200.": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				73
+			],
+			"allTests": [
+				{
+					"Status Code 200.": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 544,
+	"collection": {
+		"requests": [
+			{
+				"id": "c0009a87-c884-482e-aab2-d35760d94a47",
+				"method": "GET"
+			},
+			{
+				"id": "74f735d3-e5ed-43a0-ac42-aab7bc9dfa83",
+				"method": "GET"
+			},
+			{
+				"id": "b589f898-629a-4037-8f05-d53fc19d4dfb",
+				"method": "PUT"
+			},
+			{
+				"id": "7a5a48c6-f9f7-431b-b13d-ad4ab5e6b5f0",
+				"method": "GET"
+			},
+			{
+				"id": "075705e9-47f5-4585-bf23-071dc725b0da",
+				"method": "POST"
+			},
+			{
+				"id": "8c6a5116-a90a-44cd-ae30-b8067eced02d",
+				"method": "POST"
+			}
+		]
+	}
+}

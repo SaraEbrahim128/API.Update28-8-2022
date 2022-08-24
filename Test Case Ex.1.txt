@@ -1,0 +1,18 @@
+
+Test Case 1: Register a new valid Author successfully and response code "201 Created".
+
+ [API]------------------> Post/https://fakerestapi.azurewebsites.net/api/v1/Authors
+ [Test Case ]-----------> Register New User
+ [Expected Result]------> 200 OK
+ [Actual Result]---------> 200 OK
+ [Status]----------------->Pass 
+
+
+Test Case 2: firstname & lastname should be mandatory
+
+
+[API]------------------> Post/https://fakerestapi.azurewebsites.net/api/v1/Authors
+ [Test Case ]-----------> Register New User
+ [Expected Result]------> 400 Bad Request 
+ [Actual Result]---------> 200 OK
+ [Status]----------------->Failed

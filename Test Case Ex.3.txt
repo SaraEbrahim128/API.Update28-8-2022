@@ -1,0 +1,12 @@
+Test Case 1: Author's data is updated successfully
+ [API]------------------>https://fakerestapi.azurewebsites.net/api/v1/Authors/{{ID}}
+ [Expected Result]------> 200 OK
+ [Actual Result]---------> 200 OK
+ [Status]----------------->Pass 
+
+Test case 2: The author's data is changed in GET request.
+
+ [API]------------------>https://fakerestapi.azurewebsites.net/api/v1/Authors/{{ID}}
+ [Expected Result]------> 40OK
+ [Actual Result]---------> 200 OK
+ [Status]----------------->Fail
